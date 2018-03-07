@@ -1,4 +1,7 @@
 /*eslint-disable no-process-exit*/
+
+
+// add the moduls requirements
 const chalk = require('chalk');
 const updateNotifier = require('update-notifier');
 const Conf = require('conf');
@@ -7,6 +10,8 @@ const pkg = require('../package.json');
 const config = new Conf();
 
 updateNotifier({pkg}).notify();
+
+//Save the default currency and this 'to' on a json file
 
 const saveCurrencies = argv => {
   config.set('defaultFrom', argv[1] || config.get('defaultFrom', 'USD'));
@@ -20,10 +25,14 @@ const saveCurrencies = argv => {
   process.exit(1);
 };
 
+//Displays the version on the console
+
 const version = () => {
   console.log(pkg.version);
   process.exit(1);
 };
+
+//Displays the help in the console
 
 const help = () => {
   console.log(`
@@ -56,6 +65,11 @@ Examples:
   `);
   process.exit(1);
 };
+
+/*
+in function of the argv this function dislays the help, the version or save the currency by defalult
+
+*/
 
 const helpers = argv => {
   // Version

@@ -9,7 +9,7 @@ First go on the directory "3-musketeers/cash/bin"
 #Different command to convert
 
 
-To conevert a curenccy first you put "node index.js" "amout of the currency you want convert" "the origin currency you whant to convert" "In wich currency you want to convert(you can add the number you want)
+To convert a curenccy first you put "node index.js" "amout of the currency you want convert" "the origin currency you whant to convert" "In wich currency you want to convert(you can add the number you want)
 
 node index.js "amount" "CurrencyOrigin" "ConvertToCurrency" "ConvertToCurrency"
 
