@@ -21,7 +21,7 @@ node index.js <amount> <FromCurrency> <ToCurrency> <ToCurrency> ...
 
 It converts the amount of the first currency to the others currencies
 
-![capture](/img/Capture1.PNG)
+![capture](https://github.com/Maxtz/3-musketeers/blob/master/cash/img/Capture1.PNG)
 
 node index.js <amount> <FromCurrency>
 
