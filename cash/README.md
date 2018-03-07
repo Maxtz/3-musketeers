@@ -1,48 +1,46 @@
-# cash
+## Cash
 
-# Cash
+The library Cash allows to convert 32 curencies in real time [currency](https://api.fixer.io/latest)
 
-This library allows to easily convert [32 currencies](./lib/currencies.json) with real time exchange rate using [Fixer Api](./https://api.fixer.io/latest)
+## How to use
+
+First go on the directory "3-musketeers/cash/bin" 
+
+#Different command to convert
 
 
-# Installation
+To conevert a curenccy first you put "node index.js" "amout of the currency you want convert" "the origin currency you whant to convert" "In wich currency you want to convert(you can add the number you want)
 
-1. Clone the cash project to you current project
-2. Open a command prompt on the cash project folder
-3. Install the dependencies using npm install
-
-# Usage
-
-Open a command prompt in the bin folder
-
-Run:
-
-node index.js <amount> <FromCurrency> <ToCurrency> <ToCurrency> ...
-
-It converts the amount of the first currency to the others currencies
+node index.js "amount" "CurrencyOrigin" "ConvertToCurrency" "ConvertToCurrency"
 
 ![capture](https://github.com/Maxtz/3-musketeers/blob/master/cash/img/Capture1.PNG)
 
-node index.js <amount> <FromCurrency>
 
-It converts the amount of the FromCurrency to the default(s) ToCurrency(ies).
+Conevert a currency with default parameters
+It convert the currency with the amout to the curencies in parameters by defalut
 
-(./img/Capture2.png)
+node index.js "amount" "CurrencyOrigin" 
 
-node index.js <amount>
+![capture](https://github.com/Maxtz/3-musketeers/blob/master/cash/img/Capture2.PNG)
 
-It converts the amount of the default FromCurrency to the default(s) ToCurrency(ies).
 
-(./img/Capture3.png)
+Conevert a currency with default parameters
+It convert the currency by default with the amout to the curencies in parameters by defalut
 
-node index.js --save <FromCurrency> <ToCurrency> <ToCurrency>...
+node index.js "amount"
 
-To modify the default currencies 
+![capture](https://github.com/Maxtz/3-musketeers/blob/master/cash/img/Capture3.PNG)
 
-(./img/Capture4.png)
+
+To modify the parameters by default the origin currency and  In wich currency you want to convert(you can add the number you want)
+
+node index.js --save  "CurrencyOrigin" "ConvertToCurrency" "ConvertToCurrency"
+
+![capture](https://github.com/Maxtz/3-musketeers/blob/master/cash/img/Capture4.PNG)
+
+
+Obtain the help commands
 
 node index.js --help
 
-To see the help commands
-
-(./img/Capture5.png)
+![capture](https://github.com/Maxtz/3-musketeers/blob/master/cash/img/Capture5.PNG)
